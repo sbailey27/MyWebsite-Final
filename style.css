@@ -1,0 +1,1336 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'roboto', Courier, monospace;
+    max-width: 100vw;
+}
+
+.footer
+{
+    background-color: #262626;
+    padding: 40px;
+    margin-top: 300px;
+    height: 200px;   
+}
+@media only screen and (max-width: 1000px)
+{
+    .footer
+    {
+        margin-top: 100px;
+        height: 150px;
+    }
+}
+
+.footerWrapper
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    column-gap: 30px;
+    row-gap: 50px;
+    color: #FFFFFF;
+    width: 80%;
+    margin-left: 20%;
+    
+}
+
+@media only screen and (max-width: 1000px)
+{
+    .footerWrapper
+    {
+        display: grid;
+        grid-auto-columns: 1fr 1fr 1fr 1fr;
+        width: 100%;
+        margin: 0;
+        row-gap: 10px;
+        
+    } 
+}
+
+.footerWrapper ul li
+{
+    list-style-type: none;
+    text-decoration: none;
+    padding: 5px 0 0 0;
+}
+@media only screen and (max-width: 1000px)
+{
+    .footerWrapper ul li
+    {
+        padding: 2px 0 2px 0;
+    }
+}
+
+.footerWrapper > div > h4
+{
+    color: #FF1053;
+}
+
+.footerWrapper a
+{
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.footerWrapper a:hover
+{
+    color: #FF1053;
+}
+
+.socials
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;     
+}
+@media only screen and (max-width: 1000px)
+{
+    .socials
+    {
+        grid-column: 1 / 3;
+    }
+}
+
+
+.socials li
+{
+    list-style-type: none;
+    display: inline-block;
+}
+
+.fa
+{
+    padding: 10px;
+    width: 20px;
+    text-align: center;
+    background-color: #FF1053;
+    color: #FFFFFF;
+}
+
+.fa:hover
+{
+    transform: scale(1.2);
+    color: #FFFFFF;   
+}
+
+
+/*****NAVIGATION BAR*****/
+/*navigation bar*/
+.navbar
+{
+    background-color: #262626;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+}
+
+@media only screen and (max-width: 1000px)/*navigation bar media query*/
+{
+    .navbar
+    {
+        background-color: #262626;
+        width: 100%;
+        height: 60px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        z-index: 2;
+         
+    }
+
+}
+
+
+
+/*links in navigation bar*/
+.navlinks a
+{
+    /*list-style-type: none;*/
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.navlinks
+{
+    display: inline-block;
+}
+
+@media only screen and (max-width: 1000px)
+{
+    .navlinks
+    {
+        display: none;
+        position: fixed;
+        top: 80px;
+        right: 0px;
+        z-index: 1000;
+        background-color: #262626;
+        width: 100%;
+        max-width: 100vw;
+        text-align: center;
+    }
+}
+
+
+.navlinks a:hover, .logo a:hover
+{
+    color: #FF1053;
+    text-decoration: underline;
+}
+
+ .navlinks ul li
+ {
+    list-style-type: none;
+    display: inline-block;
+    padding: 25px;
+ }
+
+ @media only screen and (max-width: 1000px)
+ {
+    .navlinks ul li
+{
+   list-style-type: none;
+   display: block;
+   padding: 5px;
+   font-size: 40px;
+}
+ }
+
+ .menu_icon
+ {
+    background-color: #FF1053;
+    z-index: 10;
+ }
+ @media only screen and (max-width: 1000px)
+ {
+    .menu_icon
+    {
+        position: fixed;
+        top: 15px;
+        right: 5px;
+        cursor: pointer;
+        z-index: 11;
+        
+    }
+ }
+ 
+ .gamesDropdown
+ {
+    display: none;
+    position: absolute;
+    z-index: 10;
+    background-color: #262626;
+    min-width: 500px;
+    height: auto;
+    margin: 5px 0 0 0;
+    padding: 0 0 0 0;
+    font-size: 5px;
+ }
+ 
+ .gamesDropdown li
+ {
+    margin-bottom: 0;
+ }
+ .gamesDropdownHolder
+ {
+    position: relative;
+ }
+
+ .gamesDropdownHolder:hover .gamesDropdown
+ {
+    display: block;
+ }
+
+ /*logo styling*/
+ .logo
+ {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+ @media only screen and (max-width: 1000px)
+ {
+    .logo
+    {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+ }
+
+
+ .logo a
+ {
+     text-decoration: none;
+     font-size: 40px;
+     color: white;
+ }
+
+ @media only screen and (max-width: 1000px)
+ {
+    .logo a 
+    {
+        font-size: 30px;
+    }
+ }
+ 
+ /*logo img styling*/
+ .logoimg
+ {
+    width: 40px;
+    height: auto;
+    position: relative;
+    top: 6px;
+    margin-left: 20px;
+ }
+ 
+ @media only screen and (max-width: 1000px)
+ {
+    .logoimg
+ {
+    width: 30px;
+    height: auto;
+    position: relative;
+    top: 6px;
+    margin-left: 20px;
+ }
+ }
+
+ /*Searchbar styling*/
+ .searchbar_div
+ {
+    margin-right: 20PX;
+ }
+
+ .searchbar
+ {
+    padding: 0px;
+    border: solid 2px;
+    border-color: #FF1053;
+    border-radius: 10%;
+    outline: none;
+    height: 30px;
+ }
+ @media only screen and (max-width: 1000px)
+ {
+    .searchbar
+    {
+        margin-right: 30px;
+    }
+ }
+
+ /*****CSS FOR FRONT PAGE VIDEO SLIDER*****/
+ .videoslider 
+ {
+    width: 100%;
+    position: relative;
+ }
+ @media only screen and (max-width: 1000px)
+ {
+    .videoslider
+    {
+        top: 60px;
+    }
+ }
+ .frontvideo
+ {
+    background-color: #F46036;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+    max-width: 100vw;
+    /*object-fit: cover;*/
+ }
+
+ .slider_nav /*class of UL containing slider thumbnail images*/
+ {
+    position: absolute;
+    bottom: 80px;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    object-fit: contain;
+ }
+
+ @media only screen and (max-width: 1000px)
+ {
+    .slider_nav
+    {
+        position: absolute;
+        bottom: 10px;
+
+    }
+ }
+
+ .videoslider li
+{
+    list-style-type: none;
+    padding: 10px;
+}
+
+.sliderImages
+{
+    width: 200px;
+    height: auto;
+    opacity: 50%;
+    border: 2px solid;
+}
+
+@media only screen and (max-width: 1000px)
+{
+    .sliderImages
+    {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.videoslider ul img:hover 
+{
+    width: 250px;
+    transition: 1s;
+    opacity: 100%;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 1000px)
+{
+    .videoslider ul img:hover
+    {
+        width: 150%;
+        transition: 1s;
+        opacity: 100%;
+    }
+}
+.frontvideo
+{
+    display: none;
+    
+}
+ /*CSS for News section*/
+.news
+{
+    background-color: #FFFFFF;
+    
+}
+
+ /* CSS for all images in news section*/
+.newsimages
+{
+    width: 50%;
+    height: auto;
+    object-fit: contain;
+}
+
+@media only screen and (max-width: 1000px)
+{
+    .newsimages
+    {
+        width: 80%;
+        height: auto;
+        padding-bottom: 0px;
+        
+        
+    }
+}
+
+/*CSS for all paragraphs in news section*/
+.news p
+{
+    font-size: 30px;
+    padding: 5px;
+}
+
+
+/*CSS to style links in news section*/
+.news a
+{
+    text-decoration: none;
+    color: #2176FF;
+    display: block;    
+}
+
+.news span
+{
+    font-weight: 600;
+    color: #F46036;
+}
+
+
+/* sets flex for news subsections */
+.news_block
+{
+    display: flex;
+    align-items: center;
+}
+
+@media only screen and (max-width: 1000px)
+{
+    .news_block
+    {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 60px;
+    }
+}
+
+@media only screen and (max-width: 1000px)
+{
+    .news_1
+    {
+        margin-top: 30px;
+    }
+}
+.news_1 p, .news_3 p
+{
+    margin: 10px; 
+}
+
+/* second div in news section*/
+.news_2
+{
+    justify-content: space-between;  /*does nothing*/
+}
+
+@media only screen and (max-width: 1000px)
+{
+    .news_2{
+        flex-direction: column-reverse;
+    }
+}
+/*CSS for paragraphs in news_2 div */
+.news_2 p
+{
+    margin-left: 70px;
+}
+
+@media only screen and (max-width: 1000px)
+{
+    .news_block p
+    {
+        font-size: 20px;
+        text-align: justify;
+        padding-top: 0px;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+}
+
+
+/*jobs div*/
+.jobs
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 10%;
+    width: 100%;
+    max-width: 100vw;
+    position: relative;
+    left: 0px;
+    right: 0px;
+    
+}
+
+.jobs a
+{
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 100px;
+    font-weight: 100;
+}
+
+
+.jobsImage
+{   
+    width: 100%;
+    max-width: 100vw;
+    margin-left: auto;
+    margin-right: auto; 
+}
+
+
+.jobsImageText
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #FFFFFF;
+    
+}
+
+.jobsImageText a
+{
+    font-size: 200px;
+    color: #FFFFFF;
+    font-weight: 900;
+}
+
+@media only screen and (max-width: 1000px)
+{
+    .jobsImageText a 
+    {
+        font-size: 40px;
+    }
+}
+
+.jobsImageText a:hover
+{
+    color: #FF1053;
+}
+
+
+/*****GAMES PAGES CSS*****/
+.game_container img 
+{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.gamesPageVideo
+{
+    display: none;
+}
+
+.game_container video
+{
+    width: 1280px;
+    max-width: 100vw;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+@media only screen and (max-width: 1000px)
+{
+    .game_container video 
+    {
+        width: 100%;
+        max-width: 100vw;
+
+    }
+}
+
+.game_container
+{
+    position: relative;
+    top: 150px;
+    text-align: center;
+    color: rgb(216, 38, 38);
+
+}
+
+.centeredtext 
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #FFFFFF;
+    
+}
+
+.centeredtext h1
+{
+    -webkit-text-stroke-color:  #262626 ;
+    -webkit-text-stroke-width: 1px;
+    font-weight: bolder;
+    font-size: 50px;
+}
+
+.centeredtext span
+{
+    font-size: 100px;
+}
+
+.centeredtext_minor
+{
+    font-size: 1rem;
+    margin-top: 120px;
+}
+
+@media only screen and (max-width: 1000px)
+{
+    .centeredtext_minor
+    {
+        display: none;
+    }
+}
+
+.gamecards
+{ 
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 300px;
+    
+}
+
+
+
+.game_card_1
+{
+    position: relative;
+    
+}
+.game_card_2
+{
+    position: relative;
+    top: 200px;
+}
+.game_card_3
+{
+    position: relative;
+    top: 400px;
+    margin-bottom: 300px;
+}
+@media only screen and (max-width: 1000px)
+{
+    .game_card_3
+    {
+        margin-bottom: 500px;
+    }
+}
+.minor
+{
+    position: absolute;
+    left: 64px;
+    bottom: 24px;
+    width: 500px;
+    height: 100px;
+    color: #FFFFFF;
+    background-color: #262626;
+    border: #FFFFFF 1px solid;
+}
+@media only screen and (max-width: 1000px)
+{
+    .minor
+    {
+        position: absolute;
+        left: 0px;
+        bottom: -50px;
+        width: 100%;
+        height: 100px;
+        color: #FFFFFF;
+        background-color: #262626;
+        border: #FFFFFF 1px solid;
+        box-sizing: border-box;
+        max-width: 100vw;
+    }
+
+}
+
+.major
+{
+    position: absolute;
+    left: 470px;
+    bottom: -42px;
+    width: 500px;
+    height: 100px;
+    padding: 0px;
+    background-color: #FFFFFF;
+    color: #262626;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    border: 5px solid;
+    
+}
+@media only screen and (max-width: 1000px)
+{     .major
+        {
+            position: absolute;
+            left: 0px;
+            bottom: -150px;
+            width: 100%;
+            height: 100px;
+            padding: 0px;
+            background-color: #FFFFFF;
+            color: #262626;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            max-width: 100vw;
+            border: 2px solid;
+            box-sizing: border-box;
+            
+        }
+}
+
+
+.minor p 
+{
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 6px;
+    text-align: justify;
+    display: flex;
+    font-size: 1rem;
+    
+    
+}
+
+.major p
+{
+    text-align: center;
+    display: flex;
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+.major:hover
+{
+    cursor: pointer;
+    background-color: #FF1053;
+    transform: scale(1.2);
+}
+
+.major a
+{
+    text-decoration: none;
+    color: #262626;
+}
+.gamecards img
+{
+    width: 1024px;
+    height: 500px;
+}   
+
+.game_card_video
+{
+    margin-left: auto;
+    margin-right: auto;
+    width: 1024px;
+    height: auto;
+    max-width: 100%;
+}
+
+.halloweenAd
+{
+    display: grid;
+    grid-template-rows: 3fr 2fr 1fr;
+    text-align: center;
+    font-size: 2rem;
+    background-color: transparent;
+}
+
+.halloweenAd h1
+{
+    color: red;
+    font-size: 100px;
+}
+@media only screen and (max-width: 1000px)
+{
+    .halloweenAd h1 
+    {
+        font-size: 40px;
+    }
+}
+
+.halloweenAd p
+{
+    color: #FFFFFF;
+    margin-top: 40px;
+}
+
+@media only screen and (max-width: 1000px)
+{
+    .halloweenAd p
+    {
+        margin-top: 0;
+    }   
+}
+
+.halloweenAd p:last-of-type
+{
+    margin-top: 0;
+}
+
+@media only screen and (max-width: 1000px)
+{
+    .halloweenAd p:last-of-type
+    {
+        margin-top: 0;
+    }
+}
+.halloweenAdWrapper
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: transparent;
+}
+
+.halloweenBG
+{
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    max-width: 100vw;
+    height: auto;
+    z-index: -2;
+}
+
+.halloweenBGLayer
+{
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    max-width: 100vw;
+    height: 100vh;
+    background-color: #262626;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+.elizaPromo
+{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.elizaPromoWrapper
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 100vw;
+    height: 100vh;
+    text-align: center;
+}
+@media only screen and (max-width: 1000px)
+{
+    .elizaPromoWrapper
+    {
+        height: 100%;
+        margin-top: 70px;
+    }
+}
+    
+
+.elizaPromo h1
+{
+    color: red;
+    font-size: 100px;
+}
+@media only screen and (max-width: 1000px)
+{
+    .elizaPromo h1 
+    {
+        font-size: 90px;
+    }
+}
+
+.elizaPromo p
+{
+    color: #FFFFFF;
+    font-size: 30px;
+    margin: 10px 60px 10px 60px;
+}
+@media only screen and (max-width: 1000px)
+{
+    .elizaPromo p 
+    {
+        font-size: 15px;
+        text-align: justify;
+    }
+}
+
+.emphasis
+{
+    color: #F46036;
+}
+.elizaBGImage
+{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: auto;
+    max-width: 100vw;
+    margin: 0;
+}
+
+.elizaBG
+{
+    z-index: -2;
+}
+
+.elizaBGwatercolor
+{
+    z-index: -1;
+    opacity: .2;
+}
+/*****Jobs Page CSS*****/
+.why_choose
+{
+    margin-top: 100px;
+    text-align: center;
+    padding: 20px;
+    color: #FF1053;
+    font-weight: 800;
+    font-size: 30px;
+    
+}
+
+.job_benefits
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;   
+    gap: 40px;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+        @media only screen and (max-width: 1000px)
+        {
+            .job_benefits
+                {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    gap: 10px;
+                    
+                }
+        }
+
+.benefits_card
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+@media only screen and (max-width: 1000px)
+{
+    .benefits_card
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+        padding: 10px 10px 10px 10px;
+    }
+
+}
+
+    
+
+.benefits_card p
+{
+    padding: 10px;
+    color: #FF1053;
+    
+}
+
+.benefits_card img
+{
+    width: 100%;
+    height: auto;
+    border: 2px solid #FF1053;
+}
+
+@media only screen and (max-width: 1000px)
+{
+    .benefits_card img
+    {
+        width: auto;
+        max-width: 100%;
+        height: auto;
+        border: 2px solid #FF1053;
+        object-fit: contain;
+    }
+}
+
+.jobs_video
+{
+    position: fixed;
+    top: 60px;
+    z-index: -1;
+    filter: brightness(30%);
+}
+
+/* styling accordions on jobs page*/
+.open_positions /*styling for container for accordions*/
+{
+    margin-top: 50px;
+    background-color: #262626;
+}
+
+.accordion /*styling for accordions listing different job catagories*/
+{
+    background-color: #262626;
+    width: 100%;
+    max-width: 100vw;
+    outline: none;
+    border: none;
+    text-align: left;
+    color: #FF1053;
+    padding: 15px 15px 15px 8%;
+    box-sizing: border-box;
+    font-size: 50px;
+    font-weight: bolder;
+    cursor: pointer;
+}
+@media only screen and (max-width: 1000px)
+{
+    .accordion /*styling for accordions*/
+    {
+        background-color: #262626;
+        width: 100%;
+        max-width: 100vw;
+        outline: none;
+        border: none;
+        color: #FF1053;
+        padding: 25px 15px 25px 5%;
+        box-sizing: border-box;
+        font-size: 30px;
+        font-weight: bolder;
+        cursor: pointer;     
+    }
+}
+
+.accordion:hover /*Style accordion on hover*/
+{
+    color: #FFFFFF;
+}
+
+.panel /*Panel that appears when accordion is clicked*/
+{
+    padding: 0px 40px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    display: flex;
+    flex-direction: column;
+    max-width: 100vw;
+    box-sizing: border-box;
+    padding-left: 10%;
+    padding-right: 15%;
+}
+
+.panel a /*Style link elements in panel*/
+{
+    text-decoration: none;
+    color: #FF1053;
+    padding: 5px 5px 5px 0px;
+    font-weight: bolder;
+    font-size: 1.5rem;
+
+}
+
+.panel p /*style paragraphs in panel*/
+{
+    margin-top: 10px;
+    
+}
+
+.panel_links /* List of job titles shown in panel*/
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+       
+}
+
+    @media only screen and (max-width: 1000px)
+    {
+         .panel_links
+            {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 10px;
+                
+                
+            }
+    }
+
+
+.panel_links a 
+{
+    margin-right: 60px;
+}
+
+
+.panel_links a:last-child
+{
+    margin-right: 0px;
+}
+
+.panel_links a:hover
+{
+    text-decoration: underline;
+}
+    
+
+/*****NEWS.html styling*****/
+.news_container
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 80px;
+    background-color: transparent;   
+}
+
+@media only screen and (max-width: 1000px)
+{
+    .news_container
+    { 
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin-top: 10px;
+        align-items: center;
+        background-color: transparent;
+        justify-content: center;
+        width: 90%;
+        max-width: 100vw;
+    }
+}
+
+
+.news_container a
+{
+    text-decoration: none;
+}
+.news_card
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 15%;
+    margin-right: 15%;
+    background-color: transparent;
+    
+}
+
+@media only screen and (max-width: 1000px)
+{
+    .news_card
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 80%;
+        
+    }
+}
+
+
+.news_card p
+{
+    padding: 10px;
+    color: #FF1053;
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-align: justify;
+    flex-grow: 1;
+}
+
+
+.news_card:hover
+{
+    transform: scale(1.2,1.2);
+}
+
+.news_card img
+{
+    width: 100%;
+    height: auto;
+}
+
+@media only screen and (max-width: 1000px)
+{
+    .news_container img
+    {
+        width: 100%;
+        max-width: 100vw;
+        height: auto;
+        padding: 0px;
+    } 
+}
+
+.news_card img:hover
+{
+    
+    box-shadow: 4px 30px 30px 0 #262626;
+}
+
+
+.news_heading
+{
+    color: #FF1053;
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+    font-size: 100px;
+}
+
+
+
+.bold_text
+{
+    font-weight: bolder;
+    font-size: 2rem;
+}
+
+.red_text
+{
+    color: #FF1053;
+    font-weight: bolder;
+    font-size: 2.5rem;
+}
+
+tw-link:hover,
+.enchantment-link:hover {
+	color: #FF1053;
+}
+
+.aboutPageWrapper
+{
+    display: flex;
+    width: 80%;
+    align-items: center;
+    justify-content: center;
+    margin-top: 70px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.aboutUs
+{
+    padding: 20px;
+}
+
+.aboutUs p
+{
+    padding: 0 0 20px 0;
+}
+
+.aboutUs h2
+{
+    color: #FF1053;
+}

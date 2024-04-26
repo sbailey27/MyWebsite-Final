@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SB Gameworks </title>
+    <link rel="stylesheet" href="style.css">
+    <script src="./script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" /> <!--Icons from fonts.google.com-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!--Social Media Icons from fontawesome.com-->
+</head>
+
+<body>
+    <!-- Navigation bar-->
+    <nav class="navbar">
+
+        <div class="logo">
+            <a href="./index.html"><img src="./assets/images/logo.png" alt ="logo" class="logoimg"></a>
+            <a href="./index.html">SB Gameworks</a>
+        </div>
+
+        <div class="navlinks">
+            <ul>
+                <li class="gamesDropdownHolder"><a href="./games/games.html" >Games</a>
+                    <ul class=gamesDropdown>
+                        <li><a href="./games/halloweengame.html">Halloween: Root of Fear</a></li>
+                        <li><a href="./games/elizagame.html">The Painting of Eliza Beth</a></li>
+                        <li><a href="./games/dungeon.html">Dungeon Demo</a></li>
+                    </ul>
+                </li>
+                <li><a href="./news/news.html">News</a></li>
+                <li><a href="./jobs/jobs.html">Jobs</a></li>
+                <li><a href="./about/about.html">About</a></li>
+            </ul>
+        </div>
+
+        <div class="searchbar_div">
+            <input type="search" placeholder="Search" class="searchbar"/>
+        </div>
+    </nav>
+
+    <span class="material-symbols-outlined menu_icon">menu</span>
+
+    
+    <!--Video slider-->
+    <div class="videoslider">
+        <video muted autoplay class="frontvideo">
+            <source src="./assets/videos/video slider/mixkit-girl-exploring-a-haunted-mansion-at-night-44301.mp4" type="video/mp4">
+        </video>
+        <video muted autoplay class="frontvideo">
+            <source src="./assets/videos/video slider/the painting of eliza beth.mp4" type="video/mp4">
+        </video>
+        
+
+        <ul class="slider_nav">
+            <li><img src="./assets/images/video slider/halloween_roe.png" class="sliderImages"></li>
+            <li><img src="./assets/images/video slider/eliza_beth.png" class="sliderImages"></li>
+        </ul>
+    </div>
+
+    <!--Front page news section-->
+    <div class="news main">
+        <br/>
+        <h2><a href="./news/news.html">News</a></h2>
+    
+        
+        <br/>
+
+        <div class="news_1 news_block">
+            <img src="./assets/images/root_of_fear.jpg" class="news_1_img newsimages" alt="image of girl from video game">
+            <p><span>The most anticipated horror game of the year releases soon.</span>
+                Halloween: Root of Fear
+                <a href="./games/halloweengame.html">Learn More</a>
+            </p>
+            
+        </div>    
+            
+        <div class="news_2 news_block">
+
+            <p><span>Dungeon Demo Available</span>
+                <br/>
+            Try our latest game right in your browser
+                <br/>
+            <a href="games/dungeon.html">Play Now</a></p>
+            <img src="./assets/images/dungeon.jpg" class="news_2_img newsimages" alt="***PLACEHOLDER***">
+        </div>
+
+        <div class="news_3 news_block">
+            <img src="./assets/images/eliza_beth.png" class="news_3_img newsimages" alt="***PLACEHOLDER***">
+            <p><a href="/games/elizagame.html">Eliza Beth continues to excite players everywhere</a>
+            </p>
+        </div>
+
+        <div class="jobs">
+            <img src="./assets/images/joinusjobsimage.png" class="jobsImage" alt="***PLACEHOLDER***">
+            <div class="jobsImageText">
+                    <p><a href="./jobs/jobs.html">JOIN US</a></p>
+            </div>
+        </div>
+        
+        
+    </div>
+
+    <footer class="footer">
+        <div class="footerWrapper">
+
+        
+            <div class>
+                <h4>Navigation</h4>
+                <ul class="footerLinks">
+                    <li><a href="./games/games.html">Games</a></li>
+                    <li><a href="./news/news.html">News</a></li>
+                    <li><a href="./jobs/jobs.html">Jobs</a></li>
+                    <li><a href="./about/about.html">About</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>Contact Information</h4>
+                <ul>
+                    <li>Address: Kingstown</li>
+                    <li>Email: contact@sbgameworks.com</li>
+                </ul>
+            </div>
+
+            
+
+            <div>
+                <h4>Legal</h4>
+                <p>© 2024 SB Gameworks. All Rights Reserved.</p>
+            </div>
+
+            <div class="socials">
+                <ul class="social_links">
+                    <li><a href="https://facebook.com" target="_blank" class="fa fa-facebook"></a> </li>
+                    <li><a href="https://reddit.com" target="_blank" class="fa fa-reddit"></a> </li>
+                    <li><a href="https://twitter.com" target="_blank" class="fa fa-twitter"></a> </li>
+                    <li><a href="https://instagram.com" target="_blank" class="fa fa-instagram"></a> </li>
+                    <li><a href="https://youtube.com" target="_blank" class="fa fa-youtube"></a> </li>
+                
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
