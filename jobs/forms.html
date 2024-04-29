@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1">
+    <title>SB Gameworks </title>
+    <link rel="stylesheet" href="../style.css">
+    <script src="../script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" /> <!--Icons from fonts.google.com-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!--Social Media Icons from fontawesome.com-->
+</head>
+
+<body>
+    <!-- Navigation bar-->
+    <nav class="navbar">
+
+        <div class="logo">
+            <a href="../index.html"><img src="../assets/images/logo.png" alt ="logo" class="logoimg"></a>
+            <a href="../index.html">SB Gameworks</a>
+        </div>
+
+        <div class="navlinks">
+            <ul>
+                <li class="gamesDropdownHolder"><a href="../games/games.html" >Games</a>
+                    <ul class=gamesDropdown>
+                        <li><a href="../games/halloweengame.html">Halloween: Root of Fear</a></li>
+                        <li><a href="../games/elizagame.html">The Painting of Eliza Beth</a></li>
+                        <li><a href="../games/dungeon.html">Dungeon Demo</a></li>
+                    </ul>
+                <li><a href="../news/news.html">News</a></li>
+                <li><a href="../jobs/jobs.html">Jobs</a></li>
+                <li><a href="../about/about.html">About</a></li>
+            </ul>
+        </div>
+
+        <div class="searchbar_div">
+            <input type="search" placeholder="Search" class="searchbar"/>
+        </div>
+
+    </nav>
+
+    <span class="material-symbols-outlined menu_icon">menu</span>
+
+    <div class="form_wrapper">
+        <H1>JOB APPLICATION FORMS</H1>
+        <div id="art_form" class="forms_div">
+            <form class="job_forms">
+                <h2>ART</h2>
+                <input list="art_datalist">
+                <datalist id="art_datalist">
+                    <option value="Character Artist">
+                    <option value="Environment Artist">
+                    <option value="COncept Artist">
+                    <option value="3D Modeler">
+                </datalist>
+                <input type="text" placeholder="First Name">
+                <input type="text" placeholder="Last Name">
+                <input type="text" placeholder="Address">
+                <input type="email" placeholder="EMail Address">
+                <input type="number" placeholder="Phone">
+                <label for="cv_submit">Attach CV</label> 
+                <input type="file" placeholder="attach resume" id="cv_submit">
+                <input type="Submit">
+            </form>
+        </div>
+        <div id="audio_form" class="forms_div">
+            <form class="job_forms">
+                <h2>Audio</h2>
+                <input list="audio_datalist">
+                <datalist id="audio_datalist">
+                    <option value="Sound Designer">
+                    <option value="Voiceover Artist">
+                    <option value="Foley Artist">
+                    <option value="Localization Audio Engineer">
+                    <option value="Composer">
+                </datalist>
+                <input type="text" placeholder="First Name">
+                <input type="text" placeholder="Last Name">
+                <input type="text" placeholder="Address">
+                <input type="email" placeholder="EMail Address">
+                <input type="number" placeholder="Phone">
+                <label for="cv_submit">Attach CV</label> 
+                <input type="file" placeholder="attach resume" id="cv_submit">
+                <input type="Submit">
+            </form>
+        </div>
+        <div id="business_form" class="forms_div">
+            <form class="job_forms">
+                <h2>Business and Finance</h2>
+                <input list="businessfinance_datalist">
+                <datalist id="businessfinance_datalist">
+                    <option value="Marketing and Sales">
+                    <option value="Financial Analyst">
+                    <option value="Accountant">
+                </datalist>
+                <input type="text" placeholder="First Name">
+                <input type="text" placeholder="Last Name">
+                <input type="text" placeholder="Address">
+                <input type="email" placeholder="EMail Address">
+                <input type="number" placeholder="Phone">
+                <label for="cv_submit">Attach CV</label> 
+                <input type="file" placeholder="attach resume" id="cv_submit">
+                <input type="Submit">
+            </form>
+        </div>
+        <div id="software_form" class="forms_div">
+            <form class="job_forms">
+                <h2>Software and Programming</h2>
+                <input list="software_datalist">
+                <datalist id="software_datalist">
+                    <option value="AI Programmer">
+                    <option value="Gameplay Programmer">
+                    <option value="Level Designer">
+                    <option value="Systems Designer">
+                    <option value="Technical Artist">
+                    <option value="Quality Assurance Tester">
+                    <option value="UI/UX Designer">
+                </datalist>
+                <input type="text" placeholder="First Name">
+                <input type="text" placeholder="Last Name">
+                <input type="text" placeholder="Address">
+                <input type="email" placeholder="EMail Address">
+                <input type="number" placeholder="Phone">
+                <label for="cv_submit">Attach CV</label> 
+                <input type="file" placeholder="attach resume" id="cv_submit">
+                <input type="Submit">
+            </form>
+        </div>
+        <div id="story_form" class="forms_div">
+            <form class="job_forms">
+                <h2>Story</h2>
+                <input list="story_datalist">
+                <datalist id="story_datalist">
+                    <option value="Narrative Designer">
+                    <option value="Lore Designer">
+                    <option value="Writer">
+                    <option value="Localization Writer">
+                </datalist>
+                <input type="text" placeholder="First Name">
+                <input type="text" placeholder="Last Name">
+                <input type="text" placeholder="Address">
+                <input type="email" placeholder="EMail Address">
+                <input type="number" placeholder="Phone">
+                <label for="cv_submit">Attach CV</label> 
+                <input type="file" placeholder="attach resume" id="cv_submit">
+                <input type="Submit">
+            </form>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footerWrapper">
+
+        
+            <div class>
+                <h4>Navigation</h4>
+                <ul class="footerLinks">
+                    <li><a href="../games/games.html">Games</a></li>
+                    <li><a href="../news/news.html">News</a></li>
+                    <li><a href="../jobs/jobs.html">Jobs</a></li>
+                    <li><a href="../about/about.html">About</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>Contact Information</h4>
+                <ul>
+                    <li>Address: Kingstown</li>
+                    <li>Email: contact@sbgameworks.com</li>
+                </ul>
+            </div>
+
+            
+
+            <div>
+                <h4>Legal</h4>
+                <p>© 2024 SB Gameworks. All Rights Reserved.</p>
+            </div>
+
+            <div class="socials">
+                <ul class="social_links">
+                    <li><a href="https://facebook.com" target="_blank" class="fa fa-facebook"></a> </li>
+                    <li><a href="https://reddit.com" target="_blank" class="fa fa-reddit"></a> </li>
+                    <li><a href="https://twitter.com" target="_blank" class="fa fa-twitter"></a> </li>
+                    <li><a href="https://instagram.com" target="_blank" class="fa fa-instagram"></a> </li>
+                    <li><a href="https://youtube.com" target="_blank" class="fa fa-youtube"></a> </li>
+                
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+</body>
