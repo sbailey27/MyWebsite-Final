@@ -142,7 +142,7 @@ for (i = 0; i < accordion.length; i++)
 
 //News Page Accordion
 document.addEventListener("DOMContentLoaded", function(){
-var news_accordion = document.getElementsByClassName("news_accordion"); /*Get all elements with class "news_Card"*/
+var news_accordion = document.getElementsByClassName("news_accordion"); //Get all elements with class "news_Card"
 var a;
 
 for(a=0 ; a < news_accordion.length; a++)
